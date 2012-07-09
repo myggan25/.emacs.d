@@ -1,0 +1,7 @@
+This is a set of files I use to load in my .emacs file. 
+The aim of these files is to setup emacs in a way that 
+it works well with my customized sv_dvorak layout on the 
+TypeMatrix keyboard on both Windows and Linux.One important 
+part is the use of https://github.com/benhansenslc/BigCtrl
+on Windows and https://gitorious.org/at-home-modifier/pages/Home
+on Linux to make the spacebar act as ctrl.
