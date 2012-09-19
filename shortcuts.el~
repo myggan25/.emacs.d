@@ -1,0 +1,4 @@
+;;===========Global shortcuts
+
+(global-set-key "\C-u" 'control-x-prefix)
+(global-set-key "\M-u" 'execute-extended-command)
