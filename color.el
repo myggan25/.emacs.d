@@ -22,8 +22,8 @@
 (set-foreground-color *fgcolor*)
 
 ;;Ändra färgen på statusraden.
-(set-face-foreground 'modeline *status*)
-(set-face-background 'modeline *bgcolor*)
+ (set-face-foreground 'mode-line *status*)
+ (set-face-background 'mode-line *bgcolor*)
 
 ;;Standardbakgrund.
 (set-face-background 'default *bgcolor*)
