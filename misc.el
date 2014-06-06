@@ -6,3 +6,9 @@
 
 ;;Show parenteses when matching
 (show-paren-mode t)
+
+;;Marmalade
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
