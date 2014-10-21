@@ -14,6 +14,13 @@
 ;;Show parenteses when matching
 (show-paren-mode t)
 
+;;Marmalade
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+
 ;;Dölj menyraden i emacs. Kan vara trevligt när man lärt sig många 
 ;;kortkommandon. Rekommenderas inte att användas av nybörjare.
 ;(menu-bar-mode -1)
@@ -59,9 +66,3 @@
 ;; funktion i emacs som alltför få känner till.
 (global-set-key [S-iso-lefttab] 'dabbrev-completion)
 
-
-;;Org mode
- (add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
-     (global-set-key "\C-cl" 'org-store-link)
-     (global-set-key "\C-ca" 'org-agenda)
-     (global-set-key "\C-cb" 'org-iswitchb)
