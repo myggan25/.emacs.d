@@ -58,3 +58,10 @@
 ;; Binder Shift+Tab till ordkomplettering.  Det är en jättesmart
 ;; funktion i emacs som alltför få känner till.
 (global-set-key [S-iso-lefttab] 'dabbrev-completion)
+
+
+;;Org mode
+ (add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
+     (global-set-key "\C-cl" 'org-store-link)
+     (global-set-key "\C-ca" 'org-agenda)
+     (global-set-key "\C-cb" 'org-iswitchb)
